@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- SEARCH PAGE -->
+    <div class="" id="home">
+        <div class="container">
+            <h1> <strong>Get Today's Weather in your <i>City...</i></strong> </h1>
+            <form action="#">
+                <div class="form-container">
+                    <label for="enterCity"><strong>Your City:</strong></label>
+                    <input type="text" name="city" id="enterCity" placeholder="e.g Panchkula">
+                    <label for="enterCountry"><strong>Your Country:</strong></label>
+                    <input type="text" name="city" id="enterCountry" placeholder="e.g India">
+                    <button type="button" class="btn btn-danger">Get Weather</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- WEATHER PAGE -->
+    <div class="inactive" id="weather">
+        <div class="container-main">
+            <div class="box">
+                <div class="" id="item-1"></div>
+            </div>
+            <div class="box">
+                <div class="content" id="item-2"></div>
+            </div>
+            <div class="box">
+                <div class="content" id="item-3">
+                    <h2><i><strong>Climate is what we expect, weather is what we get.</strong></i></h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content" id="item-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

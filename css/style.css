@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+}
+
+.inactive{
+    display: none;
+}
+
+.container{
+    background: rgb(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    max-width: 40%;
+    padding-top: 15px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.form-container input{
+    width: 30%;
+    margin: auto;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+.form-container label{
+    margin-top: 20px;
+}
+
+.btn{
+    width: 120px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Main Weather Page */
+/********************************************************************************************/
+
+.container-main{
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* border: 2px solid black; */
+    padding-bottom: 10px;
+}
+
+.container-main .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.container-main .box:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 3;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container-main .box:nth-child(2) {
+    grid-row: span 1;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-main .box:nth-child(2):hover{
+    background-color: rgba(101, 213, 241, 0.7);
+}
+.container-main .box:nth-child(3) {
+    grid-column: span 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-main .box:nth-child(3):hover{
+    background-color: rgba(101, 213, 241, 0.7);
+}
+.container-main .box:nth-child(4) {
+    grid-column: span 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-main .box:nth-child(4):hover{
+    background-color: rgba(101, 213, 241, 0.7);
+}
+#item-1{
+    font-size: xx-large;
+}
+#item-2{
+    font-size: xx-large;
+}
+#item-3{
+    padding: 10px;
+    font-size: x-large;
+}
+#item-4{
+    font-size: xx-large;
+}
+
+
